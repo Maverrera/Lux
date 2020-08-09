@@ -1,2 +1,6 @@
-console.log('Hello World');
-console.log('Probando probando');
+const {createWindow} = require('./main')
+const {app} = require('electron')
+
+app.allowRendererProcessReuse = false;
+require('electron-reload')(__dirname)
+app.whenReady().then(createWindow);s
