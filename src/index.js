@@ -1,7 +1,6 @@
 const {createWindow} = require('./main')
 const {app} = require('electron')
 
-
 app.allowRendererProcessReuse = false;
 require('electron-reload')(__dirname)
-app.whenReady().then(createWindow);
+app.whenReady().then(createWindow);s
